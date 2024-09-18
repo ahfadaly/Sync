@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+
+@font-face {
+  font-family: myfont;
+  src: url(../webfonts/alfont_com_Brando-Arabic-Text.otf) format("truetype");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 30px;
+}
+
+:root {
+  --main-color: #16e965;
+  --white-color: #ffff;
+  --gray-color: #adadad;
+  --black-color: #040404;
+}
+body {
+  font-family: "Cairo", sans-serif;
+}
+button:focus,
+a:focus,
+input:focus,
+textarea:focus {
+  box-shadow: none !important;
+  outline: none;
+  border: none;
+}
+
+.btn-pill {
+  background-color: var(--main-color);
+  padding: 8px 40px;
+  font-size: 25.89px;
+  font-weight: 500;
+}
+/* start header ------- */
+.header {
+  background-image: url(../images//bg-header.jpg);
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header .nav-item .logo img {
+  width: 150px;
+}
+.header .nav-item .list li a {
+  color: var(--gray-color);
+}
+.header .nav-item .list li a.active {
+  color: var(--main-color);
+  border-bottom: solid 2px var(--main-color);
+  font-weight: 600;
+  display: inline-block;
+}
+.header .nav-item .list li {
+  padding: 0 20px 0 0;
+}
+.header .title h2 {
+  color: var(--white-color);
+  font-size: 62px;
+  line-height: 1.3;
+}
+.header .title h2 span {
+  color: var(--main-color);
+}
+.header .title button {
+  background-color: var(--main-color);
+  font-size: 18px;
+}
+.header .login a:last-child {
+  background-color: var(--main-color);
+  font-weight: 500;
+}
+@media (min-width: 1200px) {
+  .header .nav-item .list li {
+    padding: 0 40px 0 0;
+  }
+}
+@media (max-width: 991px) {
+  .header {
+    height: auto;
+  }
+  .header .nav-item .list li a {
+    color: var(--black-color);
+    margin-bottom: 20px;
+  }
+  .header .title h2 {
+    font-size: 32px;
+  }
+  .header .login a:first-child {
+    color: var(--black-color) !important;
+  }
+  .header .img-box {
+    position: static !important;
+  }
+}
+/* end header ------- */
+
+/* start about-us ------- */
+.about-us {
+  background-color: var(--black-color);
+  position: relative;
+}
+.about-us h4 {
+  color: var(--main-color);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 55.16px;
+  text-transform: uppercase;
+}
+.about-us p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 40.16px;
+}
+@media (max-width: 991px) {
+  .about-us h4 {
+    font-size: 30px;
+  }
+  .about-us p {
+    font-size: 18px;
+  }
+}
+/* end about-us ------- */
+
+/* satrt sync-works */
+.sync-works .title h2 {
+  background-color: var(--main-color);
+  font-weight: 500;
+}
+.btn-pill {
+  background-color: var(--main-color);
+  font-size: 18px;
+}
+.sync-works .works h4,
+.sync-works .works p {
+  font-size: 35.37px;
+  font-weight: 700;
+}
+
+@media (max-width: 991px) {
+  .sync-works .works h4,
+  .sync-works .works p {
+    font-size: 25px !important;
+    font-weight: 600;
+  }
+}
+/* end sync-works */
+
+/* start testimonials ---------- */
+.testimonials .title h2,
+.contact-us .title h2 {
+  background-color: var(--main-color);
+  font-size: 24px;
+}
+/* end testimonials ---------- */
+
+/* start our-clients -------------- */
+.our-clients .item img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+/* end our-clients -------------- */
+
+/* satrt testimonials --------- */
+.testimonials .bg-testimonials {
+  background-color: var(--black-color);
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.testimonials .item .desc {
+  border: solid 1px var(--main-color);
+  padding: 30px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin-bottom: 30px;
+  position: relative;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.testimonials .item .desc::before {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-left: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+  transform: rotate(45deg);
+  background-color: var(--black-color);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  position: absolute;
+  bottom: -10.5px;
+  left: 44px;
+}
+
+.testimonials .item .desc p {
+  color: var(--white-color);
+  font-size: 16px;
+}
+.testimonials .item h5 {
+  color: var(--main-color);
+}
+.testimonials .item h6 {
+  color: var(--white-color);
+}
+@media (max-width: 991px) {
+  .testimonials .item .desc {
+    height: auto;
+  }
+  .testimonials .item .desc {
+    padding: 15px;
+  }
+  .testimonials .item .desc p,
+  .testimonials .item h6 {
+    font-size: 14px;
+  }
+}
+/* end testimonials --------- */
+
+/* start things-happen --- */
+.things-happen .bg-happen {
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  background-color: #f3f3f3;
+}
+.things-happen .desc h3 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.things-happen .desc p {
+  font-weight: 500;
+  font-size: 18px;
+}
+.things-happen .desc button {
+  background-color: var(--main-color);
+  font-size: 16px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+@media (max-width: 991px) {
+  .things-happen .desc h3 {
+    font-size: 19px;
+  }
+}
+/* end things-happen --- */
+
+/* satrt contact-us */
+.contact-us .bg-contact-us {
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  background-color: #f3f3f3;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.contact-us .form-check-input {
+  border: solid 5px #fff;
+}
+.contact-us .form-check-input:checked[type="radio"] {
+  background-color: var(--main-color);
+  background-image: none;
+  font-size: 24px;
+  margin-top: 0;
+}
+.contact-us .form input,
+.contact-us .form textarea {
+  border: solid 1px var(--black-color);
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.contact-us .form button {
+  background-color: var(--black-color);
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 0;
+}
+.contact-us .box-img img {
+  position: absolute;
+  top: 0;
+  width: 500px;
+  right: -171px;
+  z-index: -1;
+}
+@media (max-width: 991px) {
+  .contact-us .box-img img {
+    opacity: 0.6;
+  }
+}
+/* end contact-us */
+
+/* satrt footer ----------- */
+.footer {
+  background-color: var(--black-color);
+  border-radius: 30px 30px 0 0;
+  -webkit-border-radius: 30px 30px 0 0;
+  -moz-border-radius: 30px 30px 0 0;
+  -ms-border-radius: 30px 30px 0 0;
+  -o-border-radius: 30px 30px 0 0;
+}
+.footer .logo img {
+  width: 150px;
+}
+.footer .list li a {
+  text-decoration: underline;
+  color: #fff;
+  font-size: 16px;
+}
+.footer .media li {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  background-color: var(--white-color);
+  margin: 0 20px 0 0;
+}
+.footer .media li svg {
+  color: var(--black-color);
+}
+.footer .contact-us h5 {
+  background-color: var(--main-color);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  font-weight: 600;
+}
+.footer .contact-us p {
+  color: var(--white-color);
+  font-size: 16px;
+}
+.footer .send-email {
+  background-color: #292a32;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.footer .send-email input {
+  border: solid 1px var(--white-color);
+  background: none;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  color: #fff;
+  padding: 15px;
+}
+.footer .send-email input::placeholder {
+  color: var(--white-color);
+}
+.footer .send-email button {
+  background-color: var(--main-color);
+  border-radius: 12px;
+  padding: 15px;
+}
+@media (max-width: 991px) {
+  .footer .contact-us p {
+    font-size: 14px;
+  }
+  .footer .list li a {
+    padding-left: 0;
+  }
+}
+/* end footer ----------- */
