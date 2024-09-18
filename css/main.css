@@ -40,12 +40,11 @@ textarea:focus {
 }
 /* start header ------- */
 .header {
-  background-image: url(../images//bg-header.jpg);
+  background-image: url(../images/shape.png);
   width: 100%;
-  height: 800px;
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
+  background-color: #000 !important;
 }
 .header .nav-item .logo img {
   width: 150px;
@@ -86,6 +85,7 @@ textarea:focus {
 @media (max-width: 991px) {
   .header {
     height: auto;
+    background-position: center;
   }
   .header .nav-item .list li a {
     color: var(--black-color);
@@ -135,6 +135,29 @@ textarea:focus {
   background-color: var(--main-color);
   font-weight: 500;
 }
+.sync-works .left::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url(../images/left.png);
+  background-size: cover;
+  height: 700px;
+  width: 400px;
+  z-index: -1;
+}
+.sync-works .right::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url(../images/right.png);
+  background-size: cover;
+  height: 700px;
+  width: 300px;
+  z-index: -1;
+}
+
 .btn-pill {
   background-color: var(--main-color);
   font-size: 18px;
